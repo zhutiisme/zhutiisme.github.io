@@ -1,3 +1,133 @@
-Chuqi Dai
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chuqi Dai">
+  <title>Chuqi Dai</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #667085;
+      --accent: #5b67f1;
+      --accent-dark: #4651d4;
+      --card: rgba(255, 255, 255, 0.86);
+    }
 
-202464870072@mail.scut.edu.cn
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(91, 103, 241, 0.22), transparent 34%),
+        radial-gradient(circle at 85% 80%, rgba(73, 196, 174, 0.2), transparent 32%),
+        #f4f6fb;
+    }
+
+    .card {
+      width: min(100%, 520px);
+      padding: 52px 44px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(38, 48, 86, 0.14);
+      backdrop-filter: blur(14px);
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, #6975f5, #48bda9);
+      border-radius: 50%;
+      box-shadow: 0 12px 28px rgba(91, 103, 241, 0.28);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 8vw, 44px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+    }
+
+    .label {
+      margin: 12px 0 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .email {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      max-width: 100%;
+      padding: 14px 20px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      background: var(--accent);
+      border-radius: 14px;
+      box-shadow: 0 10px 22px rgba(91, 103, 241, 0.25);
+      transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+    }
+
+    .email:hover {
+      transform: translateY(-2px);
+      background: var(--accent-dark);
+      box-shadow: 0 14px 28px rgba(91, 103, 241, 0.32);
+    }
+
+    .email:focus-visible {
+      outline: 3px solid rgba(91, 103, 241, 0.3);
+      outline-offset: 4px;
+    }
+
+    .email svg {
+      flex: 0 0 auto;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 42px 22px;
+        border-radius: 22px;
+      }
+
+      .email {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar" aria-hidden="true">CD</div>
+    <h1>Chuqi Dai</h1>
+    <p class="label">Contact me</p>
+    <a class="email" href="mailto:202464870072@mail.scut.edu.cn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>202464870072@mail.scut.edu.cn</span>
+    </a>
+  </main>
+</body>
+</html>
